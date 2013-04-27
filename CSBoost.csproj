@@ -1,0 +1,118 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F4A907A3-DF97-49BB-B7EF-0797F63114EC}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CSBoost</RootNamespace>
+    <AssemblyName>CSBoost</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Distributions\Bernoulli.cs" />
+    <Compile Include="Distributions\Beta.cs" />
+    <Compile Include="Distributions\Binomial.cs" />
+    <Compile Include="Distributions\Cauchy.cs" />
+    <Compile Include="Distributions\ChiSquared.cs" />
+    <Compile Include="Distributions\NonCentralT.cs" />
+    <Compile Include="Distributions\NonCentralF.cs" />
+    <Compile Include="Distributions\NonCentralBeta.cs" />
+    <Compile Include="Distributions\NonCentralChiSquared.cs" />
+    <Compile Include="Distributions\InverseGamma.cs" />
+    <Compile Include="Distributions\Uniform.cs" />
+    <Compile Include="Distributions\InvChiSquared.cs" />
+    <Compile Include="Distributions\Exponential.cs" />
+    <Compile Include="Distributions\Extreme_Value.cs" />
+    <Compile Include="Distributions\Gamma.cs" />
+    <Compile Include="Distributions\Hypergeometric.cs" />
+    <Compile Include="Distributions\Laplace.cs" />
+    <Compile Include="Distributions\Logistic.cs" />
+    <Compile Include="Distributions\Lognormal.cs" />
+    <Compile Include="Distributions\NegativeBinomial.cs" />
+    <Compile Include="Distributions\Normal.cs" />
+    <Compile Include="Distributions\Pareto.cs" />
+    <Compile Include="Distributions\Poisson.cs" />
+    <Compile Include="Distributions\Rayleigh.cs" />
+    <Compile Include="Distributions\Root.cs" />
+    <Compile Include="Distributions\Students_T.cs" />
+    <Compile Include="Distributions\Triangular.cs" />
+    <Compile Include="Distributions\Weibull.cs" />
+    <Compile Include="XMath\Bessel.cs" />
+    <Compile Include="XMath\Beta.cs" />
+    <Compile Include="XMath\binomial.cs" />
+    <Compile Include="Distributions\Fisher_f.cs" />
+    <Compile Include="XMath\Cbrt.cs" />
+    <Compile Include="XMath\Complex.cs" />
+    <Compile Include="XMath\Conversion.cs" />
+    <Compile Include="XMath\ellint.cs" />
+    <Compile Include="XMath\Expint.cs" />
+    <Compile Include="XMath\Factorial.cs" />
+    <Compile Include="XMath\Hermite.cs" />
+    <Compile Include="XMath\Hyperbolic.cs" />
+    <Compile Include="XMath\Laguerre.cs" />
+    <Compile Include="XMath\Lanczos.cs" />
+    <Compile Include="XMath\Erf.cs" />
+    <Compile Include="XMath\Gamma.cs" />
+    <Compile Include="XMath\LCM+GCD.cs" />
+    <Compile Include="XMath\Legendre.cs" />
+    <Compile Include="XMath\log1p.cs" />
+    <Compile Include="XMath\Poisson.cs" />
+    <Compile Include="XMath\Rounding.cs" />
+    <Compile Include="XMath\Series.cs" />
+    <Compile Include="XMath\Spherical_harmonic.cs" />
+    <Compile Include="XMath\Trigonometric.cs" />
+    <Compile Include="XMath\XMath.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="XMath\std+math.cs" />
+    <Compile Include="XMath\Toms748.cs" />
+    <Compile Include="XMath\zeta.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
